@@ -1,0 +1,263 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    
+}
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: rgb(246, 248, 247);
+}
+header{
+    background-color: white;
+
+}
+header a{
+    display: inline-block;
+    padding: 15px;
+    text-decoration: none;
+    color: black;
+
+}
+header #logo{
+    font-size:2em;
+}
+header nav li{
+    display: inline-block;
+
+}
+header nav a{
+    transition: background-color 0.4s;
+}
+header nav a:hover{
+    background-color: rgba(0,0,0,.1);
+}
+
+#showcase{
+    height: 400px;
+    background-image: url("../asset/Capture3.PNG");
+    background-size: cover;
+    position: relative;
+
+}
+#showcase .text{
+    background-color: rgba(0,0,0,.3);
+    position: absolute;
+    width: 100%;
+    bottom: 175px;
+}
+#showcase .text h2{
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+}
+/**showcase**/
+#few-words-about-us .words-container{
+    max-width: 500px;
+    margin: auto;
+}
+.words{
+    text-align: center;
+    margin: 20px 0px;
+
+}
+.words-container h3 , .words-container p{
+    padding: 10px;
+}
+.call-to-action{
+    text-align: center;
+}
+.call-to-action a{
+    display: inline-block;
+    padding: 15px 10px;
+    margin:20px 0px;
+    color: #fff;
+    background-color: #55C18F;
+    text-decoration: none;
+    transition: box-shadow 0.4s;
+}
+
+.call-to-action a:hover{
+    box-shadow: 0px 0px 15px rgba(0,0,0,.2);
+}
+/**few-word**/
+#history{
+    background-color: #fff;
+    text-align: center;
+}
+#history h2{
+    padding: 20px;
+    border-bottom: 1px solid rgba(0,0,0,.1);
+    margin-bottom: 30px;
+}
+.event{
+    margin: 10px;
+}
+.event p{
+    padding: 10px;
+}
+.event-date{
+    color: #55C18F;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+.event .event-title{
+    color: #55C18F;
+    font-size: 1.3em;
+}/**history**/
+
+#our-team{
+   
+    text-align: center;
+    padding-bottom: 50px;
+}
+#our-team h2{
+    padding: 20px;
+    border-bottom: 1px solid rgba(0,0,0,.1);
+    margin-bottom: 30px;
+}
+.member{
+    margin: 10px;
+    padding: 5px;
+    padding-bottom: 15px;
+    background-color: #fff;
+   
+   
+}
+.members img{
+    height: 150px;
+    width: 150px;
+    margin:10px;
+    border-radius: 50%;
+}
+/**/
+#faq{
+    background-color: #fff;
+}
+#faq h2{
+    padding: 20px;
+    border-bottom: 1px solid rgba(0,0,0,.1);
+    margin-bottom: 30px;
+    text-align: center;
+
+}
+.faq{
+    margin: 10px;
+
+
+}
+.faq p{
+    padding: 10px;
+
+}
+.faq .q{
+    font-style: italic;
+    color: #55C18F;
+    font-weight: bold;
+}
+.faq span{
+    font-size: 1.2em;
+    padding-right: 5px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+/***header*/
+footer{
+    background-color: black;
+    color: #fff;
+    padding: 20px;
+}
+footer .services ul{
+    list-style-type: none;
+
+}
+footer .services h5{
+    padding: 15px 0px;
+    font-size: 1.2em;
+}
+footer .services{
+    margin-bottom: 20px;
+}
+footer a{
+    color: #fff;
+
+}
+footer .contact-info{
+    padding: 10px 0px;
+}
+footer .contact-form{
+    padding: 20px 0px;
+}
+footer .contact-form input{
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0px;
+}
+footer .contact-form button{
+    background-color:#55C18F;
+    color:#fff;
+    padding: 15px;
+    display: inline-block;
+    text-decoration: none;
+    transition: box-shadow 0.4s;
+    margin:10px 0px;
+    border: none;
+}
+/**footer**/
+@media screen and (min-width:600px){
+    header nav{
+        display: inline-block;
+        width: 60%;
+    }
+}
+    
+/* Media queries */
+
+@media screen and (min-width:750px){
+    #history .event{
+        display: inline-block;
+        width: 45%;
+    }
+    header #logo{
+        display: inline-block;
+        width: 30%;
+        padding: 10px;
+    }
+    header nav{
+        display: inline-block;
+        width: 60%;
+    }
+    #our-team .members{
+        float: left;
+        width: 45%;
+    }
+    #our-team .members-container:after{
+        content: '';
+        display: block;
+        clear: both;
+    }
+    #faq .faq{
+        float: left;
+        width: 47%;
+    }
+    #faq .faq-container:after{
+        content: '';
+        display: block;
+        clear: both;
+    }
+    footer .services, footer .contact-info{
+        display: inline-block;
+        width: 46%;
+    }
+    footer .contact-form input{
+        width: 70%;
+        margin-left: 20px;
+    }
+    footer .contact-form button{
+        margin-left: 20px;
+    }
+    .copyright p{
+        margin-left: 20px;
+    }
+}

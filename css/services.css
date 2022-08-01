@@ -1,0 +1,232 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    
+}
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: rgb(246, 248, 247);
+}
+header{
+    background-color: white;
+
+}
+header a{
+    display: inline-block;
+    padding: 15px;
+    text-decoration: none;
+    color: black;
+
+}
+header #logo{
+    font-size:2em;
+}
+header nav li{
+    display: inline-block;
+
+}
+header nav a{
+    transition: background-color 0.4s;
+}
+header nav a:hover{
+    background-color: rgba(0,0,0,.1);
+}
+/* Header section */
+
+#intro{
+    min-height: 400px;
+    background-image: url(../asset/Capture4.PNG);
+    background-size: cover;
+}
+
+.intro-text{
+    text-align: center;
+    position: relative;
+    top: 170px;
+}
+
+.intro-text h2{
+    color: #fff;
+    background-color: rgba(0,0,0,.3);
+    padding: 15px;
+}
+
+
+/* Services section */
+#services{
+    background-color: #55C18F;
+    color: #fff;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+#services h2{
+    padding: 20px;
+    font-size: 1.5em;
+}
+
+.service.two{
+    margin-right: 20px;
+}
+
+.service{
+    margin: 10px;
+    padding: 10px;
+}
+
+.service h3,
+.service p{
+    padding: 10px;
+}
+
+.service.one{
+    background-size: cover;
+    background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.7)), url("../asset/capture\ 1.PNG");
+    transition: all .3s ease-out;
+}
+
+.service.two{
+    background-size: cover;
+    background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.7)), url("../asset/pexels-pixabay-265152.jpg");
+    transition: all .3s ease-out;
+}
+
+.service.three{
+    background-size: cover;
+    background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.7)), url("../asset/pexels-pixabay-531844.jpg");
+    transition: all .3s ease-out;
+}
+
+.services-container{
+    position: relative;
+}
+
+.service h3{
+    font-size: 1.4em;
+    border: 1px solid white;
+    font-weight: bold;
+}
+
+.service.one:hover{
+    transform: scale(1.05);
+    transition: all 0.5s ease;
+}
+
+.service.two:hover{
+    transform: scale(1.05);
+    transition: all 0.5s ease;
+}
+
+.service.three:hover{
+    transform: scale(1.05);
+    transition: all 0.5s ease;
+}
+
+.call-to-action a{
+    text-decoration: none;
+    color: white;
+    background-color: #55C18F;
+    display: inline-block;
+    width: 100%;
+    padding: 15px;
+    margin: 15px 0px;
+    border-radius: 50px 0px;
+    transition: all 0.8s;
+}
+
+.call-to-action a:hover{
+    background-color: white;
+    color: #55C18F;
+}
+
+/* Footer section */
+footer{
+    background-color: black;
+    color: #fff;
+    padding: 20px;
+}
+footer .services ul{
+    list-style-type: none;
+
+}
+footer .services h5{
+    padding: 15px 0px;
+    font-size: 1.2em;
+}
+footer .services{
+    margin-bottom: 20px;
+}
+footer a{
+    color: #fff;
+
+}
+footer .contact-info{
+    padding: 10px 0px;
+}
+footer .contact-form{
+    padding: 20px 0px;
+}
+footer .contact-form input{
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0px;
+}
+footer .contact-form button{
+    background-color:#55C18F;
+    color:#fff;
+    padding: 15px;
+    display: inline-block;
+    text-decoration: none;
+    transition: box-shadow 0.4s;
+    margin:10px 0px;
+    border: none;
+}
+
+/**Media queries**/
+@media screen and (min-width:750px){
+    header #logo{
+        display: inline-block;
+        width: 30%;
+        padding: 10px;
+    }    
+    header nav{
+        display: inline-block;
+        width: 60%;
+    } 
+    .service{
+        float: left;
+        width: 48.5%;
+        margin: 20px 0px;
+        padding: 20px;
+    }
+    .service.one{
+        width: 100%;
+        margin: 0px;
+    }
+    .services-container{
+        max-width: 700px;
+        margin: auto;
+    }
+    .services-container:after{
+        content: '';
+        display: block;
+        clear: both;
+    }
+    footer .services, footer .contact-info{
+        display: inline-block;
+        width: 46%;
+    }
+    footer .contact-form input{
+        width: 70%;
+        margin-left: 20px;
+    }
+    footer .contact-form button{
+        margin-left: 20px;
+    }
+    .copyright p{
+        margin-left: 20px;
+    }
+}
+    
+
